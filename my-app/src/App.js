@@ -1,6 +1,7 @@
 
 import './App.css';
 import React, {useRef} from 'react';
+
 function App() {
   const largo = useRef(null);
   const ancho = useRef(null);
@@ -11,8 +12,8 @@ const calcula = _ =>{
 }
   return (
     <div className="App">
-    <input type="text" ref="largo"/>
-    <input type="text" ref="ancho"/>
+    <input type="text" ref={largo}/>
+    <input type="text" ref={ancho}/>
 
     <button onClick={calcula}>Calcular</button>
     </div>
